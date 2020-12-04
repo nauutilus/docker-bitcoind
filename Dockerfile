@@ -10,6 +10,7 @@ VOLUME ["/bitcoin"]
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 ENV HOME /bitcoin
+ENV LND_SUPPORT=false
 
 ARG GROUP_ID=1000
 ARG USER_ID=1000
